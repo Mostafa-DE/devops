@@ -1,0 +1,13 @@
+{
+	"Resources": {
+		"mostafade": {
+			"Type": "AWS::S3::Bucket",
+			"Properties": {
+				"BucketName": "mostafade-213213212321"
+			}
+		},
+		"de": {
+			"Type": "AWS::S3::Bucket"
+		}
+	}
+}

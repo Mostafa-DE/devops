@@ -1,0 +1,18 @@
+services:
+  api:
+    build: ./api
+    container_name: de-api
+    ports:
+      - 3001:3001
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+
+  client:
+    build: ./frontend
+    container_name: de-frontend
+    ports:
+      - 3000:3000
+
+    stdin_open: true
+    tty: true
